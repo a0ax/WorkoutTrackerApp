@@ -164,7 +164,7 @@
 
 <div class="px-4 pt-safe-top">
   <!-- Header -->
-  <div class="z-10 bg-[hsl(var(--background)/0.9)] py-3 flex items-center justify-between">
+  <div class="sticky top-0 z-10 bg-[hsl(var(--background)/0.9)] backdrop-blur-sm py-3 flex items-center justify-between">
     <div>
       <h1 class="text-2xl font-bold text-[hsl(var(--foreground))]">Today</h1>
       <p class="text-sm text-[hsl(var(--muted-foreground))]">{dateLabel}</p>
