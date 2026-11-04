@@ -57,9 +57,9 @@
   }
 </script>
 
-<div class="flex min-h-screen flex-col bg-[hsl(var(--background))]">
+<div class="flex min-h-dvh flex-col bg-[hsl(var(--background))]">
   <!-- Main content area -->
-  <main class="flex-1 overflow-y-auto pb-[calc(4rem+env(safe-area-inset-bottom,0px))]">
+  <main class="flex-1 pb-[calc(4rem+env(safe-area-inset-bottom,0px))]">
     {@render children()}
   </main>
 
