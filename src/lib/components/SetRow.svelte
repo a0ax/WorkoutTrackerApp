@@ -34,12 +34,12 @@
     onUpdate?.(set.id, 'exerciseName', ex.name);
   }
 
-  function handleRepsChange(e: Event) {
+  function handleRepsCommit(e: Event) {
     const val = (e.target as HTMLInputElement).value;
     onUpdate?.(set.id, 'reps', val ? parseInt(val) : null);
   }
 
-  function handleWeightChange(e: Event) {
+  function handleWeightCommit(e: Event) {
     const val = (e.target as HTMLInputElement).value;
     onUpdate?.(set.id, 'weight', val ? parseFloat(val) : null);
   }
@@ -102,7 +102,7 @@
         placeholder="Reps"
         min="0"
         max="9999"
-        oninput={handleRepsChange}
+        onchange={handleRepsCommit}
         class="w-full rounded-full border border-[hsl(var(--border))] bg-[hsl(var(--background))] px-2 py-1 text-center text-sm outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] placeholder:text-[hsl(var(--muted-foreground))]"
       />
     {:else}
@@ -126,7 +126,7 @@
         min="0"
         max="9999"
         step="2.5"
-        oninput={handleWeightChange}
+        onchange={handleWeightCommit}
         class="w-full rounded-full border border-[hsl(var(--border))] bg-[hsl(var(--background))] px-2 py-1 text-center text-sm outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] placeholder:text-[hsl(var(--muted-foreground))]"
       />
     {:else}
